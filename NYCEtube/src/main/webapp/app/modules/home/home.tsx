@@ -19,6 +19,10 @@ export const Home = (ReactElement) => {
   const videosList = useAppSelector(state => state.videos.entities);
   const loading = useAppSelector(state => state.videos.loading);
   const dispatch = useAppDispatch();
+<<<<<<< Updated upstream
+=======
+  const url = "https://zcw-cohort8zero.s3.amazonaws.com/videoapp/sora1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220506T020228Z&X-Amz-SignedHeaders=host&X-Amz-Expires=215999&X-Amz-Credential=AKIAUTLWJ537YFVAWF46%2F20220506%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8632b5367d02ae706ac3c7023e530274f9375385615b2e1a00495ed3d0a0ca2e";
+>>>>>>> Stashed changes
 
   useEffect(() => {
     dispatch(getEntities({}));
@@ -32,10 +36,18 @@ export const Home = (ReactElement) => {
 
   // const VideoUser = (props: RouteComponentProps<{ url: string }>) => {
   return (
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
     <Row>
       <Col md="3" className="pad">
         <span className="hipster rounded" />
       </Col>
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
       <Col md="9">
         <p>
         </p>
@@ -51,6 +63,16 @@ export const Home = (ReactElement) => {
         )}
          <div>
         <VideoApp/>
+<<<<<<< Updated upstream
+=======
+
+        {/* <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; child-src 'https://zcw-cohort8zero.s3.amazonaws.com'; object-src 'none'"/> */}
+
+        {/* <video width="640" height="480" controls>
+  <source src = {url} type="video/mp4"/>
+Your browser does not support the video tag.
+</video> */}
+>>>>>>> Stashed changes
       </div>
       <div>
       
